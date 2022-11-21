@@ -1,0 +1,78 @@
+window#waybar {
+  background-color: #141b1e;
+  font-family: Iosevka Nerd Font;
+}
+
+#workspaces {
+  margin: 10px;
+  margin-top: 4px;
+  padding: 4px;
+  padding-left: 0px;
+  border-radius: 10px;
+  background-color: #232a2d;
+  font-size: 12px;
+}
+
+#workspaces button {
+  color: #6e6a86;
+  padding: 2px 7px;
+}
+
+#custom-fedora {
+  color: #141b1e;
+  background-color: #88cbd4;
+  font-size: 15px;
+  padding: 8px 0px;
+  padding-right: 4px;
+  margin: 10px 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+#workspaces button:hover {
+  background: #232a2d;
+}
+
+#workspaces button.focused {
+  color: #e0def4;
+}
+
+#custom-power {
+  color: #141b1e;
+  background-color: #e57474;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px 0px;
+  margin: 0px 10px;
+  margin-bottom: 5px;
+}
+
+#clock {
+  color: #dadada;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+#custom-separator {
+  color: #dadada;
+}
+
+#memory,
+#cpu {
+  color: #dadada;
+  font-size: 17px;
+}
+
+#battery {
+  color: #dadada;
+  font-size: 17px;
+}
+
+#custom-wofi {
+  border-radius: 50px;
+  margin: 10px;
+  font-size: 17px;
+  padding: 7px;
+  background-color: #232a2d;
+  color: #dadada;
+}

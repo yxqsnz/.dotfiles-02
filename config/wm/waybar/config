@@ -1,0 +1,59 @@
+// vi: ft=json5
+{
+  "position": "left",
+  "modules-left": ["custom/fedora", "sway/workspaces"],
+  "modules-right": [
+    "cpu",
+    "battery",
+    "memory",
+    "custom/separator",
+    "clock",
+  ],
+  "sway/workspaces": {
+    "all-outputs": true,
+    "format": "",
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "custom/power": {
+    "format": "⏻",
+    "on-click": "loginctl poweroff"
+  },
+  "clock": {
+    "format": "{:%H\n%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "custom/fedora": {
+    "format": "",
+    "on-click": "wofi --show run"
+  },
+  "custom/separator": {
+    "format": "────"
+  },
+  "memory": {
+    "format": "{used:0.1f}G"
+  },
+  "cpu": {
+    "interval": 1,
+    "format": "{usage}%",
+    "max-length": 10
+    },
+"battery": {
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+        "warning": 30,
+        "critical": 15
+    },
+    "format": "{capacity}%",
+    "max-length": 25
+},  "custom/wofi": {
+    "format": "",
+    "on-click": "wofi --show run"
+  }
+}
