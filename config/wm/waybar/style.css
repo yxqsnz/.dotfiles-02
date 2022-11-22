@@ -1,3 +1,6 @@
+* {
+  all: unset;
+}
 window#waybar {
   background-color: #141b1e;
   font-family: Iosevka Nerd Font;

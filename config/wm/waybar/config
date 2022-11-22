@@ -1,6 +1,8 @@
 // vi: ft=json5
 {
   "position": "left",
+  "height": 768,
+  "width": 58,
   "modules-left": ["custom/fedora", "sway/workspaces"],
   "modules-right": [
     "cpu",
