@@ -1,1 +1,2 @@
-alias ls='exa --icons'
+alias   ls='exa --icons'
+abbr -a compose 'podman-compose' 
