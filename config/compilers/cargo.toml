@@ -1,4 +1,5 @@
 [build]
+rustc-wrapper = "cachepot"
 target-dir = "/home/yx/.cargo/target"
 jobs = 8
 

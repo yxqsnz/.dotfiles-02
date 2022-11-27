@@ -1,6 +1,3 @@
-* {
-  all: unset;
-}
 window#waybar {
   background-color: #141b1e;
   font-family: Iosevka Nerd Font;
@@ -17,11 +14,13 @@ window#waybar {
 }
 
 #workspaces button {
+  all: unset;
   color: #6e6a86;
   padding: 2px 7px;
 }
 
 #custom-fedora {
+  all: unset;
   color: #141b1e;
   background-color: #88cbd4;
   font-size: 15px;
@@ -40,38 +39,38 @@ window#waybar {
   color: #e0def4;
 }
 
-#custom-power {
-  color: #141b1e;
-  background-color: #e57474;
-  font-size: 15px;
-  border-radius: 10px;
-  padding: 10px 0px;
-  margin: 0px 10px;
-  margin-bottom: 5px;
-}
-
 #clock {
+  all: unset;
   color: #dadada;
   font-size: 1.2em;
   margin-bottom: 8px;
 }
 
 #custom-separator {
+  all: unset;
   color: #dadada;
 }
 
-#memory,
 #cpu {
-  color: #dadada;
+  all: unset;
+  font-size: 17px;
+  color: #d19a66;
+}
+
+#memory {
+  all: unset;
+  color: #c678dd;
   font-size: 17px;
 }
 
 #battery {
-  color: #dadada;
+  all: unset;
+  color: #98c379;
   font-size: 17px;
 }
 
 #custom-wofi {
+  all: unset;
   border-radius: 50px;
   margin: 10px;
   font-size: 17px;

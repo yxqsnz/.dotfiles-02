@@ -8,8 +8,11 @@ NO_COLOR='\033[0m'
 declare -A dots=(
 	["wm/sway"]="${HOME}/.config/sway"
 	["wm/waybar"]="${HOME}/.config/waybar"
+	["wm/mako"]="${HOME}/.config/mako"
+	["wm/rofi"]="${HOME}/.config/rofi"
 	["term/kitty"]="${HOME}/.config/kitty"
 	["shell/fish"]="${HOME}/.config/fish"
+	["editor/astronvim"]="${HOME}/.config/nvim/lua/user"
 	["dev/git"]="${HOME}/.config/git"
 	["compilers/cargo.toml"]="${HOME}/.cargo/config.toml"
 )
