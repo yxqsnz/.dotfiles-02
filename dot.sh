@@ -10,9 +10,9 @@ declare -A dots=(
 	["wm/waybar"]="${HOME}/.config/waybar"
 	["wm/mako"]="${HOME}/.config/mako"
 	["wm/rofi"]="${HOME}/.config/rofi"
+	["os/pacman"]="${HOME}/.config/pacman"
 	["term/kitty"]="${HOME}/.config/kitty"
 	["shell/fish"]="${HOME}/.config/fish"
-	["editor/astronvim"]="${HOME}/.config/nvim/lua/user"
 	["dev/git"]="${HOME}/.config/git"
 	["compilers/cargo.toml"]="${HOME}/.cargo/config.toml"
 )

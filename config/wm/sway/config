@@ -5,3 +5,4 @@ exec swayidle -w \
 
 include /etc/sway/config.d/*
 include ./config.d/*
+exec_always --no-startup-id sudo renice -n -20 -p $(pidof sway)

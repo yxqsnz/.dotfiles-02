@@ -1,80 +1,110 @@
-window#waybar {
-  background-color: #141b1e;
-  font-family: Iosevka Nerd Font;
-}
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: "JetBrains Mono";
+  font-size: 13px;
+  border: none;
+  border-radius: 0px; }
 
-#workspaces {
-  margin: 10px;
-  margin-top: 4px;
-  padding: 4px;
-  padding-left: 0px;
-  border-radius: 10px;
-  background-color: #232a2d;
-  font-size: 12px;
-}
+window#waybar {
+  background: transparent;
+  color: #e0def4;
+  transition-property: background-color;
+  transition-duration: .5s; }
+
+window#waybar.hidden {
+  opacity: 0.2; }
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#gamemode,
+#mode,
+#idle_inhibitor,
+#workspaces,
+#mpd {
+  color: #ffffff;
+  margin: 5px;
+  padding: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 2px;
+  background-color: #1f1d2e;
+  border: 1px solid #403d52; }
 
 #workspaces button {
-  all: unset;
-  color: #6e6a86;
-  padding: 2px 7px;
-}
+  padding: 0 5px;
+  background-color: transparent;
+  color: #e0def4;
+  /* Use box-shadow instead of border so the text isn't offset */
+  box-shadow: inset 0 -3px transparent;
+  /* Avoid rounded borders under each workspace name */
+  border: none;
+  border-radius: 0; }
 
-#custom-fedora {
-  all: unset;
-  color: #141b1e;
-  background-color: #88cbd4;
-  font-size: 15px;
-  padding: 8px 0px;
-  padding-right: 4px;
-  margin: 10px 10px;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
-  background: #232a2d;
-}
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px #ffffff; }
 
 #workspaces button.focused {
-  color: #e0def4;
-}
+  color: #ebbcba; }
 
-#clock {
-  all: unset;
-  color: #dadada;
-  font-size: 1.2em;
-  margin-bottom: 8px;
-}
+#workspaces button.urgent {
+  background-color: #eb4d4b; }
 
-#custom-separator {
-  all: unset;
-  color: #dadada;
-}
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0; }
 
-#cpu {
-  all: unset;
-  font-size: 17px;
-  color: #d19a66;
-}
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0; }
 
-#memory {
-  all: unset;
-  color: #c678dd;
-  font-size: 17px;
-}
+#battery.charging, #battery.plugged {
+  color: #ffffff;
+  background-color: #26A65B; }
 
-#battery {
-  all: unset;
-  color: #98c379;
-  font-size: 17px;
-}
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000; } }
 
-#custom-wofi {
-  all: unset;
-  border-radius: 50px;
-  margin: 10px;
-  font-size: 17px;
-  padding: 7px;
-  background-color: #232a2d;
-  color: #dadada;
-}
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+label:focus {
+  background-color: #000000; }
+
+#language {
+  background: #00b093;
+  color: #740864;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px; }
+
+#keyboard-state {
+  background: #97e1ad;
+  color: #000000;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px; }
+
+#keyboard-state > label {
+  padding: 0 5px; }
+
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2); }

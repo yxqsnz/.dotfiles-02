@@ -3,4 +3,5 @@ if test -f /etc/grc.fish
 end
 
 alias   ls='exa --icons'
-abbr -a compose 'podman-compose' 
+alias   cat='bat -p --theme ansi'
+abbr -a compose 'podman-compose'

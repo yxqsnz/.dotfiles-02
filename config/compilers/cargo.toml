@@ -1,7 +1,6 @@
 [build]
-rustc-wrapper = "cachepot"
-target-dir = "/home/yx/.cargo/target"
-jobs = 8
+rustc-wrapper = "sccache"
+target-dir = "/home/yxqsnz/.cargo/target"
 
 [profile.dev]
 debug = false
